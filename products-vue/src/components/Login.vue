@@ -4,13 +4,11 @@
     <form action="#" @submit.prevent="login">
 
       <div class="form-control">
-        <label for="email">Username/Email</label>
-        <input type="email" name="email" id="email" class="login-input" v-model="email">
+        <input type="email" name="email" id="email" class="login-input" v-model="email" placeholder="Enter your Email/Username">
       </div>
 
       <div class="form-control mb-more">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" class="login-input" v-model="password">
+        <input type="password" name="password" id="password" class="login-input" v-model="password" placeholder="Enter your password">
       </div>
 
       <div class="form-control">

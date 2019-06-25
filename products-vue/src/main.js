@@ -6,7 +6,7 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import { Model } from 'vue-api-query'
-// import loginChecker from './lib/loginChecker'
+import loginChecker from './lib/loginChecker'
 import { PaginationNav } from 'bootstrap-vue/es/components'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -22,7 +22,7 @@ Model.$http = axios
 Vue.config.productionTip = true
 
 /* eslint-disable no-new */
-// router.beforeEach(loginChecker)
+router.beforeEach(loginChecker)
 
 new Vue({
   router,

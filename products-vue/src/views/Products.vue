@@ -2,7 +2,7 @@
 <template>
   <div class='products'>
     <div style="align:right">
-      <!-- Logged in as {{loggedInUser.email}}  | --> <router-link to='/logout'>Logout</router-link>
+       Logged in as {{loggedInUser.email}}  |  <router-link to='/logout'>Logout</router-link>
     </div>
     <div class='container'>
       <ProductList/>
